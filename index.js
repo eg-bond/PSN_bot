@@ -1,5 +1,5 @@
-const TelegramAPI = require('node-telegram-bot-api')
-const { token } = require('./config')
+import TelegramAPI from 'node-telegram-bot-api'
+import { token } from './config.js'
 
 const bot = new TelegramAPI(token, { polling: true })
 
