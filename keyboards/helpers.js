@@ -16,6 +16,10 @@ export function makeInlineKeyboard(kb) {
     },
   }
 }
+
+export const delay = ms => {
+  return new Promise(res => setTimeout(() => res(), ms))
+}
 // export function makeInlineKeyboardNew(...buttonsArrays) {
 //   const keyboard = []
 
